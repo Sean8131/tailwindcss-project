@@ -4,29 +4,17 @@ import viteLogo from '/vite.svg'
 import './App.css'
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
+      <h1 className="text-slate-900 dark:text-white mt-5 text-base font-medium tracking-tight">Hello World</h1>
+      <div className="bg-white dark:bg-slate-800 rounded-lg px-6 py-8 ring-1 ring-slate-900/5 shadow-xl">
         <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
+          This is a test page for tailwindcss!
         </p>
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
+      <p className="text-slate-500 dark:text-slate-400 mt-2 text-sm">
+        I'm using tailwind css to  build a page that uses white-on-black for light mode and black-on-white for dark mode.
       </p>
     </>
   )
